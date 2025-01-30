@@ -15,8 +15,8 @@ const Guide = () => {
       </div>
 
       <div className="flex flex-col lg:flex-row max-container w-full gap-10 items-center">
-        {/* Image Section */}
-        <div className="w-full md:w-[70%] lg:w-[55%]">
+     
+        <div className="w-full md:w-[70%] lg:w-[55%] xl:w-[70%]">
           <Image
             src="/img-farm.jpg"
             alt="farm"
@@ -27,7 +27,7 @@ const Guide = () => {
           />
         </div>
 
-        {/* Radial Section */}
+      
         <div className="w-full lg:w-[35%] flex items-center justify-center">
           <div className="w-[300px] h-[300px] md:w-[400px] md:h-[400px]">
             <Radial />

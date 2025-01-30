@@ -111,7 +111,7 @@ export function ShrimpHealthChart() {
       <CardHeader className="flex flex-col items-stretch space-y-0 border-b p-0 sm:flex-row">
   <div className="flex flex-1 flex-col justify-center gap-1 px-6 py-5 sm:py-6">
     <div className="b p-6 rounded-lg">
-      <h1 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-blue-900 leading-tight tracking-tight">
+      <h1 className="ml-10 text-3xl md:text-4xl lg:text-5xl font-extrabold text-blue-900 leading-tight tracking-tight">
         Visualize your data in real-time.
       </h1>
     </div>

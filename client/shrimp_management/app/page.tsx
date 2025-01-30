@@ -1,6 +1,12 @@
 
+import Example from "@/components/Example";
+import Hero from "@/components/Hero";
+
 export default function Home() {
   return (
-    <h1 className="font-bold text-teal-500">Hello World</h1>
+    <>
+       <Hero />
+       <Example/>
+    </>
   )
 }

@@ -9,7 +9,7 @@ import {
 
 export default function FooterSection() {
   return (
-    <footer className="w-full bg-background px-4 border-t border-gray">
+    <footer className="w-full bg-background px-4 border-t border-gray mt-10">
       <div className="mx-auto max-w-container">
         <Footer>
           <FooterContent>

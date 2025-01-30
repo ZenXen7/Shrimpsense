@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image"
 import Link from "next/link"
 import CustomButton from "./CustomBtn"
+import { CircleUserRound } from 'lucide-react';
 
 
 const Navbar = () => {
@@ -22,7 +23,9 @@ const Navbar = () => {
       </ul>
 
       <div className="lg:flexCenter hidden">
-        <Button variant="outline" className="bg-blue-700 text-white">Login</Button>
+      <Button variant="outline" className="bg-blue-700 text-white">
+      <CircleUserRound /> Login to your account
+    </Button>
       </div>
       <Image 
         src="menu.svg"

@@ -9,8 +9,7 @@ const Guide = () => {
         <div className="flex flex-wrap justify-between gap-5 lg:gap-10">
           <h2 className="bold-40 lg:bold-64 xl:max-w-[390px] text-blue-900">Farm <i>Smarter</i>, not harder</h2>
           <p className="regular-18 text-gray-30 xl:max-w-[520px]">
-            With our AI-powered shrimp farming system, you'll never worry about water quality or health again. Our predictive analytics ensure optimal conditions, even when you're offline. Invite your friends and fellow farmers to join and experience smarter, more efficient shrimp farming.
-          </p>
+          With our AI-powered shrimp farming system, you’ll never have to worry about water quality, disease, or shrimp health again. Our predictive analytics ensure optimal conditions with real-time monitoring and automated adjustments, even offline. Maximize efficiency, sustainability, and productivity with data-driven insights. Join the future of shrimp farming and experience smarter, more efficient aquaculture today.          </p>
         </div>
       </div>
 

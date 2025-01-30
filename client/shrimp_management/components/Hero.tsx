@@ -8,17 +8,21 @@ const Hero = () => {
     <section className="max-container padding-container flex flex-col gap-20 py-16 pb-32 md:gap-28 lg:py-24 xl:flex-row">
       <div className="relative flex flex-1 flex-col xl:w-1/2">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-blue-900 leading-tight tracking-tight">
-          Vannamei Shrimp Health Management
+        ShrimpSense
         </h1>
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-blue-900 leading-snug tracking-normal mt-2">
+         Smarter farming, healthier shrimp.
+
+        </h2>
         <p className="mt-6 text-lg text-gray-500 xl:max-w-[520px]">
           Optimize shrimp health, growth, and disease prevention with our AI-driven water quality monitoring system. 
           Ensure a sustainable and efficient farming experience with real-time insights.
         </p>
         <div className="mt-5 flex flex-col w-full gap-4 sm:flex-row">
-          <Button className="bg-blue-600 hover:bg-blue-700 text-white transition-all duration-300 ease-in-out shadow-lg hover:shadow-xl">
+          <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white transition-all duration-300 ease-in-out shadow-lg hover:shadow-xl">
             Get Started
           </Button>
-          <Button variant="outline" className="flex items-center gap-2 text-blue-600 border-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300 ease-in-out">
+          <Button size="lg" variant="outline" className="flex items-center gap-2 text-blue-600 border-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300 ease-in-out">
             <Image src="/play.svg" alt="play" width={16} height={16} />
             Learn More
           </Button>

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image"
 import Link from "next/link"
 import CustomButton from "./CustomBtn"
-import { CircleUserRound } from 'lucide-react';
+import { Book } from 'lucide-react';
 
 
 const Navbar = () => {
@@ -24,7 +24,7 @@ const Navbar = () => {
 
       <div className="lg:flexCenter hidden">
       <Button variant="outline" className="bg-blue-700 text-white">
-      <CircleUserRound /> Login to your account
+      <Book /> Book a demo
     </Button>
       </div>
       <Image 

@@ -1,9 +1,10 @@
+
 import { NAV_LINKS } from "@/constants"
 import { Button } from "@/components/ui/button";
 import Image from "next/image"
 import Link from "next/link"
 import { Book } from 'lucide-react';
-
+import { CircleUserRound } from 'lucide-react';
 
 const Navbar = () => {
   return (
@@ -21,10 +22,17 @@ const Navbar = () => {
       </ul>
 
       <div className="lg:flexCenter hidden">
-        <Button variant="outline" className="bg-blue-700 text-white">
+        <Button variant="outline" className="bg-green-600 text-white">
           <Book /> Book a demo
         </Button>
+        <Button asChild variant="outline" className="bg-blue-700 text-white ml-3">
+        <Link href="/login">
+        
+            <CircleUserRound /> Login to your account
+          </Link>
+        </Button>
       </div>
+
       <Image 
         src="menu.svg"
         alt="menu"

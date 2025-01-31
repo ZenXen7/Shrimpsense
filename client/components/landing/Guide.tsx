@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
-import { Radial } from './shadCharts/Radial'
+import { Radial } from '../shadCharts/Radial'
+import { ShrimpHarvest } from '../shadCharts/ShrimpHarvest'
 
 const Guide = () => {
   return (
@@ -15,7 +16,6 @@ const Guide = () => {
       </div>
 
       <div className="flex flex-col lg:flex-row max-container w-full gap-10 items-center">
-     
         <div className="w-full md:w-[70%] lg:w-[55%] xl:w-[70%]">
           <Image
             src="/img-farm.jpg"
@@ -27,10 +27,12 @@ const Guide = () => {
           />
         </div>
 
-      
-        <div className="w-full lg:w-[35%] flex items-center justify-center">
-          <div className="w-[300px] h-[300px] md:w-[400px] md:h-[400px]">
+        <div className="w-full lg:w-[35%] flex flex-col gap-5 items-center">
+          <div className="w-full flex-1">
             <Radial />
+          </div>
+          <div className="w-full flex-1">
+            <ShrimpHarvest />
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import { ShrimpHealthChart } from "./shadCharts/ShrimpHealthChart";
+import { ShrimpHealthChart } from "../shadCharts/ShrimpHealthChart";
 
 const Example = () => {
   return(

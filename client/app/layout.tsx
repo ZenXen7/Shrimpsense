@@ -1,15 +1,16 @@
+// client/app/layout.tsx
+
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import FooterSection from "@/components/FooterSection";
-
-
-
+import Navbar from "@/components/landing/Navbar";
+import FooterSection from "@/components/landing/FooterSection";
 
 export const metadata: Metadata = {
   title: "Shrimp",
-  description: "Shrimp ",
+  description: "Shrimp Health Management",
 };
+
+
 
 export default function RootLayout({
   children,
@@ -18,14 +19,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="">
-        <Navbar/>
+      <body>
+        <Navbar />
         <main className="relative overflow-hidden">
-
-        {children}
+          {children}
         </main>
-        
-        <FooterSection/>
+        <FooterSection />
       </body>
     </html>
   );

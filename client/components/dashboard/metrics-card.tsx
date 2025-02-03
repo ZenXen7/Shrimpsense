@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card"
 import { ArrowUpRight } from "lucide-react"
 import type React from "react"
+import { Badge } from "@/components/ui/badge";
 
 interface MetricsCardProps {
   title: string
@@ -19,6 +20,9 @@ export function MetricsCard({ title, value, unit, change, chart }: MetricsCardPr
     <Card className="p-4 bg-white shadow-md">
       <div className="flex items-center justify-between mb-4">
         <h3 className="text-sm text-blue-600">{title}</h3>
+        <Badge variant="outline" className="bg-blue-600 text-white">
+              Optimal
+            </Badge>
         {chart ? <ArrowUpRight className="h-4 w-4 text-blue-600" /> : null}
       </div>
       <div className="flex items-end justify-between">

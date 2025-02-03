@@ -83,7 +83,7 @@ export default function Page() {
           </div>
           <Card className="mt-6 p-6 bg-white">
             <div className="mb-4 flex items-center justify-between">
-              <h2 className="text-lg font-semibold text-blue-900">Temperature Trend</h2>
+              <h2 className="text-xl font-semibold text-blue-900 ">Temperature Trend</h2>
               <div className="flex gap-2">
                 <Button size="sm" variant="ghost" className="text-blue-700">
                   Today

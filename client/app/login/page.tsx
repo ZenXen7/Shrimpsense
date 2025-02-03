@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function LoginPage() {
   return (
     <div className="min-h-screen grid lg:grid-cols-2">
-      {/* Left: Login Form */}
+     
       <div className="flex items-center justify-center p-8">
         <div className="mx-auto w-full max-w-sm space-y-6">
           <div className="space-y-2 text-center">

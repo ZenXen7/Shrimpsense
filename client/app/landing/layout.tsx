@@ -1,7 +1,6 @@
-// client/app/layout.tsx
 
 import type { Metadata } from "next";
-import "./globals.css";
+import "../globals.css";
 import Navbar from "@/components/landing/Navbar";
 import FooterSection from "@/components/landing/FooterSection";
 
@@ -29,3 +28,13 @@ export default function RootLayout({
     </html>
   );
 }
+
+
+
+
+
+
+
+
+
+

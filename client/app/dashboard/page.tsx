@@ -4,16 +4,19 @@ import { Input } from "@/components/ui/input"
 import { ShrimpDataTable } from "@/components/dashboard/shrimp-data-table"
 import { BarChart3, ChevronDown, Droplets, Home, LayoutDashboard, LifeBuoy, Settings, Fish } from "lucide-react"
 import { MetricsCard } from "@/components/dashboard/metrics-card"
-import { StatsChart } from "@/components/dashboard/stats-chart"
+import Image from "next/image"
+import { Badge } from "@/components/ui/badge"
+import { TemperatureTrend } from "@/components/shadCharts/TemperatureTrend"
+
 
 export default function Page() {
   return (
     <div className="min-h-screen  text-blue-900">
       <div className="grid lg:grid-cols-[280px_1fr]">
         <aside className="border-r bg-white">
-          <div className="flex h-16 items-center gap-2 border-b px-6">
-            <Fish className="h-6 w-6 text-blue-600" />
-            <span className="font-bold text-blue-900">ShrimpSense</span>
+          <div className="flex h-16 items-center justify-between gap-5 border-b px-6">
+          <Badge  className="bg-blue-800 text-white py-1">KC's Farm</Badge>
+          <h2 className="font-medium">Advanced</h2>
           </div>
           <div className="px-4 py-4">
             <Input placeholder="Search" className="bg-blue-50" />
@@ -81,29 +84,12 @@ export default function Page() {
               change={{ value: "+0.1", percentage: "+1.3%", isPositive: true }}
             />
           </div>
-          <Card className="mt-6 p-6 bg-white">
-            <div className="mb-4 flex items-center justify-between">
-              <h2 className="text-xl font-semibold text-blue-900 ">Temperature Trend</h2>
-              <div className="flex gap-2">
-                <Button size="sm" variant="ghost" className="text-blue-700">
-                  Today
-                </Button>
-                <Button size="sm" variant="ghost" className="text-blue-700">
-                  Week
-                </Button>
-                <Button size="sm" variant="ghost" className="text-blue-700">
-                  Month
-                </Button>
-                <Button size="sm" variant="ghost" className="text-blue-700">
-                  Quarter
-                </Button>
-                <Button size="sm" variant="ghost" className="text-blue-700">
-                  Year
-                </Button>
-              </div>
-            </div>
-            <StatsChart />
-          </Card>
+         <div className="border border-blue-50 py-5">
+         <TemperatureTrend/>
+         </div>
+            
+           
+        
           <div className="mt-6">
             <Card className="bg-white">
               <div className="p-6">
